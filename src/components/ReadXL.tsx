@@ -17,7 +17,7 @@ const ReadXL: React.FC = () => {
             const cleanedKeys = convertKeysToCamelCase(data);
             const cleanedData = await cleanTradeData(cleanedKeys);
             const gTrades = aggregateTrades(cleanedData);
-            console.log(gTrades);
+            // console.log(gTrades);
             writeData(gTrades);
             // add aggregated columns
             // const aggregatedData = addAggregatedColumns(cleanedData);
