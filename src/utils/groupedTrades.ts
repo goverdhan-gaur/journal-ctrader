@@ -11,6 +11,7 @@ interface AggregatedData {
     finalClose: number | null;
     partialTP: Record<string, number>; // Partial take profits
     partialSL: Record<string, number>; // Partial stop losses
+    trades: CleanedTradeData[]; // Store all trades in the group
 }
 
 export function aggregateTrades(trades: CleanedTradeData[]): AggregatedData[] {
@@ -32,10 +33,14 @@ export function aggregateTrades(trades: CleanedTradeData[]): AggregatedData[] {
                 totalPips: 0,
                 finalClose: null,
                 partialTP: {}, // Initialize partial TP
-                partialSL: {}  // Initialize partial SL
+                partialSL: {}, // Initialize partial SL
+                trades: [] // Initialize trades array
             };
             positionTracking[openKey] = { remainingLots: 0, totalPips: 0, lastClosingPrice: 0 };
         }
+
+        // Push the trade into the trades array
+        aggregated[openKey].trades.push(trade);
 
         // Aggregate profits, lots, pips, etc.
         aggregated[openKey].totalProfit += trade.net;

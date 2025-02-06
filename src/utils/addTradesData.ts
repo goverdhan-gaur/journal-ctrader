@@ -1,6 +1,10 @@
 import { ref, set, push } from "firebase/database";
 
 import { database } from "./firebase.config";
-const writeData = (userId: string, data: any) => {
-    set(ref(database, `trades/${userId}`), data);
+export const writeData = async (data: any) => {
+    const a = await push(ref(database, `trades`), data);
+    console.log(a.key);
 };
+
+
+
