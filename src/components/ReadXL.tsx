@@ -1,6 +1,8 @@
 "use client";
 import { writeData } from '@/utils/addTradesData';
-import { cleanTradeData, convertKeysToCamelCase, CleanedTradeData } from '@/utils/cleanData';
+import { generateOverview } from '@/utils/aggregatedOverview';
+import {  cleanTradeData, convertKeysToCamelCase } from '@/utils/cleanData';
+
 import { getJsonDataFromExcel } from '@/utils/getJsonFromExcel';
 import { aggregateTrades, Position } from '@/utils/groupedTrades';
 import React from 'react';
@@ -11,46 +13,18 @@ interface ReadXLProps {
 
 const ReadXL: React.FC<ReadXLProps> = ({ onTradesUpdate }) => {
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
-        try {
-            console.log('File upload started');
-            const data = await getJsonDataFromExcel(event);
-            console.log('Raw Excel data:', data);
-            
-            if (data) {
-                const cleanedKeys = convertKeysToCamelCase(data);
-                console.log('Data with cleaned keys:', cleanedKeys);
-                
-                const cleanedData = await cleanTradeData(cleanedKeys);
-                console.log('Cleaned trade data:', cleanedData);
-                
-                const positions = aggregateTrades(cleanedData);
-                console.log('Aggregated positions:', positions);
-                
-                if (!Array.isArray(positions)) {
-                    console.error('Expected positions to be an array');
-                    return;
-                }
-
-                // Validate each position has required fields
-                const validPositions = positions.filter(position => {
-                    const isValid = position && 
-                           position.symbol && 
-                           position.openingDir && 
-                           position.trades && 
-                           Array.isArray(position.trades);
-                    
-                    if (!isValid) {
-                        console.error('Invalid position:', position);
-                    }
-                    return isValid;
-                });
-
-                console.log('Valid positions:', validPositions);
-                onTradesUpdate(validPositions, cleanedData);
-                await writeData(validPositions);
-            }
-        } catch (error) {
-            console.error('Error processing file:', error);
+        const data = await getJsonDataFromExcel(event);
+        // Clean the data
+        if (data) {
+            const cleanedKeys = convertKeysToCamelCase(data);
+            const cleanedData = await cleanTradeData(cleanedKeys);
+            const gTrades = aggregateTrades(cleanedData);
+            const finalData = generateOverview(gTrades)
+            console.log(finalData);
+            // writeData(gTrades);
+            // add aggregated columns
+            // const aggregatedData = addAggregatedColumns(cleanedData);
+          
         }
     };
 
