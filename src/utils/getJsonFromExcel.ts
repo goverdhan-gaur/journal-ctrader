@@ -19,7 +19,7 @@ export const getJsonDataFromExcel = async (event: React.ChangeEvent<HTMLInputEle
                 const sheetName = workbook.SheetNames[0];
                 const sheet = workbook.Sheets[sheetName];
                 jsonData = XLSX.utils.sheet_to_json(sheet);
-
+                
                 resolve(jsonData);
             } catch (error) {
                 reject(error);

@@ -1,5 +1,6 @@
 "use client";
 import { writeData } from '@/utils/addTradesData';
+import { generateOverview } from '@/utils/aggregatedOverview';
 import {  cleanTradeData, convertKeysToCamelCase } from '@/utils/cleanData';
 
 import { getJsonDataFromExcel } from '@/utils/getJsonFromExcel';
@@ -17,8 +18,9 @@ const ReadXL: React.FC = () => {
             const cleanedKeys = convertKeysToCamelCase(data);
             const cleanedData = await cleanTradeData(cleanedKeys);
             const gTrades = aggregateTrades(cleanedData);
-            console.log(gTrades);
-            writeData(gTrades);
+            const finalData = generateOverview(gTrades)
+            console.log(finalData);
+            // writeData(gTrades);
             // add aggregated columns
             // const aggregatedData = addAggregatedColumns(cleanedData);
           
