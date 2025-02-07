@@ -13,23 +13,23 @@ interface TradeData {
 }
 
 export interface CleanedTradeData {
+    orderId: string;
     symbol: string;
+    direction: string;  
     entryPrice: number;
-    openingDirection: string;
-    openingDate: string; 
-    openingTime: string;
-    closingQuantity: number;
     closingPrice: number;
-    closingDate: string;
+    initialQuantity: number;    // Initial position size
+    closingQuantity: number;    // Size of the close
+    remainingQuantity: number;  // Remaining position size after partial close
+    openingTime: string;
     closingTime: string;
-    pips: number;
     net: number;
-    balance: number;
+    isPartialClose?: boolean;
+    parentOrderId?: string;
+    relatedOrderIds?: string[]; // For tracking related trades
 }
 
-
 // Change keys to camelcase
-// change the keys to camelcase
 const toCamelCase = (str: string) => {
     return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match, index) => {
         if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
@@ -48,37 +48,47 @@ export const convertKeysToCamelCase = (data: any[]) => {
     });
 };
 
-// Clean the trade data (sepoerate date)
-function extractDateTime(dateTime: string): { date: string, time: string } {
-    const [date, time] = dateTime.split(' ');
-    return { date, time };
-}
-
-export async function cleanTradeData(data: TradeData[]): Promise<CleanedTradeData[]> {
+export async function cleanTradeData(data: any[]): Promise<CleanedTradeData[]> {
     // Simulate an async operation (e.g., API call or data processing)
     return new Promise((resolve) => {
         setTimeout(() => {
             const cleanedData = data.map(item => {
-                const { date: closingDate, time: closingTime } = extractDateTime(item.closingTime);
-                const { date: openingDate, time: openingTime } = extractDateTime(item.openingTime);
+                // Convert numeric strings to numbers
+                const entryPrice = parseFloat(item.entryPrice?.toString() || '0');
+                const closingPrice = parseFloat(item.closingPrice?.toString() || '0');
+                const closingQuantity = parseFloat(item.closingQuantity?.toString() || '0');
+                const initialQuantity = parseFloat(item.initialQuantity?.toString() || closingQuantity.toString() || '0');
+                const net = parseFloat(item.net$?.toString() || '0');
+
+                // Calculate remaining quantity
+                const remainingQuantity = Math.max(0, initialQuantity - closingQuantity);
 
                 return {
-                    symbol: item.symbol,
-                    openingDirection: item.openingDirection,
-                    openingDate,
-                    openingTime,
-                    closingQuantity: item.closingQuantity,
-                    closingDate,
-                    closingTime,
-                    entryPrice: item.entryPrice,
-                    closingPrice: item.closingPrice,
-                    net: item.net$,
-                    pips: item.pips/10,
-                    balance: item.balance$
+                    orderId: item.orderId?.toString() || '',
+                    symbol: item.symbol || '',
+                    direction: item.openingDirection || '', 
+                    entryPrice,
+                    closingPrice,
+                    initialQuantity,
+                    closingQuantity,
+                    remainingQuantity,
+                    openingTime: item.openingTime || '',
+                    closingTime: item.closingTime || '',
+                    net,
+                    isPartialClose: remainingQuantity > 0,
+                    parentOrderId: '',
+                    relatedOrderIds: []
                 };
             });
 
-            resolve(cleanedData); // Return cleaned data
-        }, 1000); // Simulate a delay (1 second)
+            // Sort by opening time for consistent processing
+            cleanedData.sort((a, b) => {
+                const timeA = new Date(a.openingTime).getTime();
+                const timeB = new Date(b.openingTime).getTime();
+                return timeA - timeB;
+            });
+
+            resolve(cleanedData);
+        }, 100); 
     });
 }
