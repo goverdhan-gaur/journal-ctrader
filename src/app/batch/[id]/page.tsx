@@ -36,7 +36,7 @@ export default function Home() {
                         <KpiCard title={"Total Lots"} value={trade.totalLots} />
                         <KpiCard title={"PnL"} value={trade.totalProfit} />
                         <KpiCard title={"No. of Trades"} value={trade.totalTrades} />
-                        <KpiCard title={"Total Pips"} value={trade.totalPips} />
+                        <KpiCard title={"Total Pips"} value={trade.totalPips.toFixed(1)} />
                     </KpiGrid>
 
                     {/* Display Trade Summary */}

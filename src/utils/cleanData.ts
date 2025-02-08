@@ -49,8 +49,18 @@ export const convertKeysToCamelCase = (data: any[]) => {
 };
 
 // Clean the trade data (sepoerate date)
-function extractDateTime(dateTime: string): { date: string, time: string } {
-    const [date, time] = dateTime.split(' ');
+function extractDateTime(dateTime: string | Date): { date: string, time: string } {
+    let date = '';
+    let time = '';
+    if (typeof dateTime === 'string') {
+        [date, time] = dateTime.split(' ');
+        return { date, time };
+    }
+    if (dateTime instanceof Date) {
+        date = dateTime.toISOString().split('T')[0];
+        time = dateTime.toTimeString().split(' ')[0];
+        return { date, time };
+    }
     return { date, time };
 }
 

@@ -1,55 +1,31 @@
 "use client"
-import { useEffect, useState } from "react";
-import { useParams, useSearchParams } from 'next/navigation'
-import { database } from "@/utils/firebase.config";
-import { equalTo, get, query, ref } from "firebase/database";
+import { useParams } from 'next/navigation'
 import KpiGrid from "@/components/KpiGrid";
 import KpiCard from "@/components/KpiCard";
 import Link from "next/link";
 import { Button } from "@/components/AddDataModal";
-import TradeList from "@/components/TradeList";
+import { useTradesStore } from "@/store/useTradeStore";
+import TradeListDetails from '@/components/TradeListDetails';
 
 export default function Home() {
-    const [data, setData] = useState<any>(null);
-    const router = useParams();
-    const {id, tradeId} = router;
-    console.log(id, tradeId);
-    useEffect(() => {
-        if (id && tradeId) {
-            const dbRef = ref(database, `trades/${id}/tradeSummary/`); // Fetch data based on the id
-            const tradeQuery = query(dbRef, equalTo(Array.isArray(tradeId) ? tradeId[0] : tradeId));
-            const fetchData = async () => {
-                try {
-                    const snapshot = await get(tradeQuery);
-                    if (snapshot.exists()) {
-                        setData(snapshot.val());
-                    } else {
-                        console.log("No data available");
-                    }
-                } catch (error) {
-                    console.error("Error fetching data:", error);
-                }
-            };
-
-            fetchData();
-            
-        }
-    }, [id]); // Re-run effect when id changes
-
+  
+    const {id, tradeId} = useParams();
+    const specificTrade = useTradesStore.getState().getSpecificTrade(id as string, tradeId as string);
+    console.log(specificTrade)
     return (
         <div className="container mx-auto p-4">
-            {data ? (
+            {specificTrade ? (
                 <div>
                    <Link href="/"><Button>Back to Home</Button></Link>
                     <KpiGrid className="mt-4"> 
-                        <KpiCard title={"Total Lots"} value={data.totalLots} />
-                        <KpiCard title={"PnL"} value={data.totalProfit} />
-                        <KpiCard title={"No. of Trades"} value={data.totalTrades} />
-                        <KpiCard title={"Total Pips"} value={data.totalPips} />
+                        <KpiCard title={"Total Lots"} value={specificTrade.totalLots} />
+                        <KpiCard title={"PnL"} value={specificTrade.totalProfit} />
+                        <KpiCard title={"No. of Trades"} value={specificTrade.trades.length} />
+                        <KpiCard title={"Total Pips"} value={specificTrade.totalPips.toFixed(2)} />
                     </KpiGrid>
 
                     {/* Display your data here */}
-                    <TradeList trades={data.tradeSummary} id={Array.isArray(id) ? id[0] : id}/>
+                    <TradeListDetails trades={specificTrade.trades} tradeId={Array.isArray(tradeId) ? tradeId[0] : tradeId || ''} id={Array.isArray(id) ? id[0] : id || ''}/>
                     {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
                 </div>
             ) : (
