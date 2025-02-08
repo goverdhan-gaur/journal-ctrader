@@ -1,4 +1,4 @@
-interface TradeData {
+export interface TradeData {
     balance$: number;
     closingQuantity: number;
     closingVolume: number;

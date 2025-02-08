@@ -1,0 +1,2373 @@
+{
+  "trades": {
+    "-OIXVU59MZzlFUDBxJph": {
+      "createdDate": "2025-02-07T22:22:34.339Z",
+      "sessionDates": {
+        "endDate": "2/4/2025, 8:05:58 AM",
+        "startDate": "1/6/2025, 7:49:01 AM"
+      },
+      "totalLots": 5.31,
+      "totalPips": 859.8,
+      "totalProfit": -229.99,
+      "totalTrades": 32,
+      "tradeSummary": [
+        {
+          "closeTime": "07:53:15.536",
+          "date": "06/01/2025",
+          "finalClose": 2644.06,
+          "id": "e4d192b1-3f59-412d-a7e8-b70f335fd048",
+          "openPrice": 2647.58,
+          "openTime": "07:49:01.132",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:51:44.552",
+              "id": "5dcb755c-a7a4-4489-96e8-a598e71b6e24",
+              "lotsClosed": 0.15,
+              "percentageClosed": "48.39",
+              "pips": -19.8,
+              "price": 2645.6
+            },
+            "sl2": {
+              "closedTime": "07:53:15.536",
+              "id": "4f668f7f-5981-44c3-984c-67ebbfc94510",
+              "lotsClosed": 0.16,
+              "percentageClosed": "51.61",
+              "pips": -35.2,
+              "price": 2644.06
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.31,
+          "totalPips": -55,
+          "totalProfit": -88.2,
+          "trades": [
+            {
+              "balance": 9969.24,
+              "closingDate": "06/01/2025",
+              "closingPrice": 2645.6,
+              "closingQuantity": 0.15,
+              "closingTime": "07:51:44.552",
+              "entryPrice": 2647.58,
+              "id": "35c5cf16-8f46-4cc7-a298-1bca633150fe",
+              "net": -30.76,
+              "openingDate": "06/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:49:01.132",
+              "pips": -19.8,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9911.8,
+              "closingDate": "06/01/2025",
+              "closingPrice": 2644.06,
+              "closingQuantity": 0.16,
+              "closingTime": "07:53:15.536",
+              "entryPrice": 2647.58,
+              "id": "4dc8aa52-052c-423d-9f3c-056b3a5c3742",
+              "net": -57.44,
+              "openingDate": "06/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:49:01.132",
+              "pips": -35.2,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:25:39.131",
+          "date": "06/01/2025",
+          "finalClose": 2642.51,
+          "id": "8c7e8b57-ebe2-49b4-926f-bf5602888e3b",
+          "openPrice": 2648.14,
+          "openTime": "08:09:08.002",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:11:42.092",
+              "id": "f0d7b373-472c-4c96-b854-8a96ecdc4503",
+              "lotsClosed": 0.04,
+              "percentageClosed": "50.00",
+              "pips": -24.8,
+              "price": 2645.66
+            },
+            "sl2": {
+              "closedTime": "08:25:39.131",
+              "id": "4fb35ce1-b070-4213-9e4c-b27e4f5a264e",
+              "lotsClosed": 0.04,
+              "percentageClosed": "50.00",
+              "pips": -56.3,
+              "price": 2642.51
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.08,
+          "totalPips": -81.1,
+          "totalProfit": -33,
+          "trades": [
+            {
+              "balance": 9901.6,
+              "closingDate": "06/01/2025",
+              "closingPrice": 2645.66,
+              "closingQuantity": 0.04,
+              "closingTime": "08:11:42.092",
+              "entryPrice": 2648.14,
+              "id": "ce34c1ca-b8e7-42b9-b3f4-757e98b6f376",
+              "net": -10.2,
+              "openingDate": "06/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:09:08.002",
+              "pips": -24.8,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9878.8,
+              "closingDate": "06/01/2025",
+              "closingPrice": 2642.51,
+              "closingQuantity": 0.04,
+              "closingTime": "08:25:39.131",
+              "entryPrice": 2648.14,
+              "id": "afdc9d2a-bcc9-45d2-9a88-c73ede19ae41",
+              "net": -22.8,
+              "openingDate": "06/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:09:08.002",
+              "pips": -56.3,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:19:59.304",
+          "date": "07/01/2025",
+          "finalClose": 2657.83,
+          "id": "b9e012af-d535-4ad2-bf5a-a046a6faa150",
+          "openPrice": 2652.37,
+          "openTime": "07:52:15.590",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:53:50.218",
+              "id": "ee3966a4-1056-44a8-a41f-78f405c4f084",
+              "lotsClosed": 0.07,
+              "percentageClosed": "53.85",
+              "pips": -8.9,
+              "price": 2651.48
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:16:12.160",
+              "id": "dfb23ae8-5b38-462d-85ad-b8bcbb0c456e",
+              "lotsClosed": 0.04,
+              "percentageClosed": "30.77",
+              "pips": 35.9,
+              "price": 2655.96
+            },
+            "tp2": {
+              "closedTime": "08:17:47.527",
+              "id": "f61d601d-a0ac-4b84-890b-33dbfffe6f15",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 31.5,
+              "price": 2655.52
+            },
+            "tp3": {
+              "closedTime": "08:19:59.304",
+              "id": "d2d03811-5e0c-40de-9221-448579d0084c",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 54.6,
+              "price": 2657.83
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.13,
+          "totalPips": 113.1,
+          "totalProfit": 15.809999999999999,
+          "trades": [
+            {
+              "balance": 9872.07,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2651.48,
+              "closingQuantity": 0.07,
+              "closingTime": "07:53:50.218",
+              "entryPrice": 2652.37,
+              "id": "ceb841d5-062f-4258-9584-adb538fed02d",
+              "net": -6.73,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:52:15.590",
+              "pips": -8.9,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9925.3,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2655.96,
+              "closingQuantity": 0.04,
+              "closingTime": "08:16:12.160",
+              "entryPrice": 2652.37,
+              "id": "50b528c6-69e9-40bd-bcfb-33378485aab4",
+              "net": 14.08,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:52:15.590",
+              "pips": 35.9,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9928.37,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2655.52,
+              "closingQuantity": 0.01,
+              "closingTime": "08:17:47.527",
+              "entryPrice": 2652.37,
+              "id": "824f2132-eda4-4c76-b90a-9575c27f08c7",
+              "net": 3.07,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:52:15.590",
+              "pips": 31.5,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9965.96,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2657.83,
+              "closingQuantity": 0.01,
+              "closingTime": "08:19:59.304",
+              "entryPrice": 2652.37,
+              "id": "d6212791-df33-4919-8df7-04e234eda1bf",
+              "net": 5.39,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:52:15.590",
+              "pips": 54.6,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:19:56.567",
+          "date": "07/01/2025",
+          "finalClose": 2657.34,
+          "id": "294322c0-d3e5-417b-8c7b-447d7c5e347e",
+          "openPrice": 2652.33,
+          "openTime": "08:00:12.882",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:16:12.159",
+              "id": "9206e61a-899e-4c09-a558-d1c8672e140c",
+              "lotsClosed": 0.11,
+              "percentageClosed": "57.89",
+              "pips": 36.3,
+              "price": 2655.96
+            },
+            "tp2": {
+              "closedTime": "08:17:47.580",
+              "id": "bcf0284a-b780-402a-ad0b-c4992d7cb25c",
+              "lotsClosed": 0.04,
+              "percentageClosed": "21.05",
+              "pips": 31.8,
+              "price": 2655.51
+            },
+            "tp3": {
+              "closedTime": "08:19:56.567",
+              "id": "e8569cb5-cee6-4610-9ce3-61837bf61320",
+              "lotsClosed": 0.04,
+              "percentageClosed": "21.05",
+              "pips": 50.1,
+              "price": 2657.34
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.19,
+          "totalPips": 118.19999999999999,
+          "totalProfit": 71.35,
+          "trades": [
+            {
+              "balance": 9911.22,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2655.96,
+              "closingQuantity": 0.11,
+              "closingTime": "08:16:12.159",
+              "entryPrice": 2652.33,
+              "id": "165785c8-16a1-49d8-9bc3-9d42d235e489",
+              "net": 39.15,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:00:12.882",
+              "pips": 36.3,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9940.81,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2655.51,
+              "closingQuantity": 0.04,
+              "closingTime": "08:17:47.580",
+              "entryPrice": 2652.33,
+              "id": "8c324ba2-1f10-4881-a5c0-887db6275a94",
+              "net": 12.44,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:00:12.882",
+              "pips": 31.8,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9960.57,
+              "closingDate": "07/01/2025",
+              "closingPrice": 2657.34,
+              "closingQuantity": 0.04,
+              "closingTime": "08:19:56.567",
+              "entryPrice": 2652.33,
+              "id": "4b7616da-34d4-4674-89e6-6bda1ef09618",
+              "net": 19.76,
+              "openingDate": "07/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:00:12.882",
+              "pips": 50.1,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:03:06.764",
+          "date": "08/01/2025",
+          "finalClose": 2655.68,
+          "id": "8dd607c3-5e89-4ba3-b21f-3f9a082ec345",
+          "openPrice": 2648.79,
+          "openTime": "07:33:11.289",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:38:54.678",
+              "id": "afa5898f-59a3-4f15-8a89-65ab2d02afca",
+              "lotsClosed": 0.09,
+              "percentageClosed": "60.00",
+              "pips": 14,
+              "price": 2650.19
+            },
+            "tp2": {
+              "closedTime": "08:01:10.055",
+              "id": "c43ecd36-5cc3-4304-a5bf-6084941af602",
+              "lotsClosed": 0.04,
+              "percentageClosed": "26.67",
+              "pips": 53.7,
+              "price": 2654.16
+            },
+            "tp3": {
+              "closedTime": "08:03:06.764",
+              "id": "aceb3dbf-90ce-437f-960a-a7c22047c142",
+              "lotsClosed": 0.02,
+              "percentageClosed": "13.33",
+              "pips": 68.9,
+              "price": 2655.68
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.15,
+          "totalPips": 136.60000000000002,
+          "totalProfit": 46.8,
+          "trades": [
+            {
+              "balance": 9977.92,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2650.19,
+              "closingQuantity": 0.09,
+              "closingTime": "07:38:54.678",
+              "entryPrice": 2648.79,
+              "id": "66ce8103-9dfb-46ff-9962-03a6eac98673",
+              "net": 11.96,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:33:11.289",
+              "pips": 14,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9999.12,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2654.16,
+              "closingQuantity": 0.04,
+              "closingTime": "08:01:10.055",
+              "entryPrice": 2648.79,
+              "id": "df9714b1-ebb1-4112-9eb0-f2ff75115c79",
+              "net": 21.2,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:33:11.289",
+              "pips": 53.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 10012.76,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2655.68,
+              "closingQuantity": 0.02,
+              "closingTime": "08:03:06.764",
+              "entryPrice": 2648.79,
+              "id": "d15476c9-0a69-4f03-abb1-14816d88b364",
+              "net": 13.64,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:33:11.289",
+              "pips": 68.9,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "10:01:29.451",
+          "date": "08/01/2025",
+          "finalClose": 2659.24,
+          "id": "9ff6bc85-ead4-44f2-b9ff-2b4e9e0701be",
+          "openPrice": 2658.44,
+          "openTime": "08:46:49.737",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:53:00.703",
+              "id": "fa84cbb5-c86e-4049-918e-99a34d3b82a0",
+              "lotsClosed": 0.11,
+              "percentageClosed": "50.00",
+              "pips": -7.1,
+              "price": 2657.73
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "09:00:57.521",
+              "id": "90f79c78-7ee1-4d52-823d-17bd5728c03c",
+              "lotsClosed": 0.07,
+              "percentageClosed": "31.82",
+              "pips": 28.4,
+              "price": 2661.28
+            },
+            "tp2": {
+              "closedTime": "09:02:49.723",
+              "id": "be0a200f-0706-4539-8098-0bb81bf48475",
+              "lotsClosed": 0.02,
+              "percentageClosed": "9.09",
+              "pips": 27,
+              "price": 2661.14
+            },
+            "tp3": {
+              "closedTime": "10:01:29.451",
+              "id": "d3bc2aed-304a-4d14-b6ed-1133341b496a",
+              "lotsClosed": 0.02,
+              "percentageClosed": "9.09",
+              "pips": 8,
+              "price": 2659.24
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.21999999999999997,
+          "totalPips": 56.3,
+          "totalProfit": 17.519999999999996,
+          "trades": [
+            {
+              "balance": 10004.17,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2657.73,
+              "closingQuantity": 0.11,
+              "closingTime": "08:53:00.703",
+              "entryPrice": 2658.44,
+              "id": "70740e3d-706e-49cc-b52d-2f98052c5e4e",
+              "net": -8.59,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:46:49.737",
+              "pips": -7.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 10023.55,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2661.28,
+              "closingQuantity": 0.07,
+              "closingTime": "09:00:57.521",
+              "entryPrice": 2658.44,
+              "id": "bd987d86-7775-4cec-8862-8b3463454967",
+              "net": 19.38,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:46:49.737",
+              "pips": 28.4,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 10028.81,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2661.14,
+              "closingQuantity": 0.02,
+              "closingTime": "09:02:49.723",
+              "entryPrice": 2658.44,
+              "id": "88274e69-a374-4a12-bb04-104fc219674c",
+              "net": 5.26,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:46:49.737",
+              "pips": 27,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 10030.28,
+              "closingDate": "08/01/2025",
+              "closingPrice": 2659.24,
+              "closingQuantity": 0.02,
+              "closingTime": "10:01:29.451",
+              "entryPrice": 2658.44,
+              "id": "850e8bc2-3022-41cc-90ed-8af38fed5c01",
+              "net": 1.47,
+              "openingDate": "08/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:46:49.737",
+              "pips": 8,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:49:14.219",
+          "date": "09/01/2025",
+          "finalClose": 2671.63,
+          "id": "3ac21f7d-50f9-4725-a8cc-ecceb4a7a440",
+          "openPrice": 2674.24,
+          "openTime": "07:35:14.757",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:43:29.125",
+              "id": "469898be-9f7a-40c2-ae57-d5a310a1188a",
+              "lotsClosed": 0.09,
+              "percentageClosed": "47.37",
+              "pips": -16.7,
+              "price": 2672.57
+            },
+            "sl2": {
+              "closedTime": "07:49:14.219",
+              "id": "3939641f-bbdf-4c7e-841c-a5b93f655cc9",
+              "lotsClosed": 0.1,
+              "percentageClosed": "52.63",
+              "pips": -26.1,
+              "price": 2671.63
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.19,
+          "totalPips": -42.8,
+          "totalProfit": -42.47,
+          "trades": [
+            {
+              "balance": 10014.61,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2672.57,
+              "closingQuantity": 0.09,
+              "closingTime": "07:43:29.125",
+              "entryPrice": 2674.24,
+              "id": "55dac85e-2dbd-4ecb-8dee-838a94f0de4d",
+              "net": -15.67,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:35:14.757",
+              "pips": -16.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9987.81,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2671.63,
+              "closingQuantity": 0.1,
+              "closingTime": "07:49:14.219",
+              "entryPrice": 2674.24,
+              "id": "92729f27-887e-4ce3-8f71-1aa97f62ab8b",
+              "net": -26.8,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:35:14.757",
+              "pips": -26.1,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:56:49.843",
+          "date": "09/01/2025",
+          "finalClose": 2673.47,
+          "id": "3915de64-69e9-4c87-a98b-ffdcfdff0188",
+          "openPrice": 2674.16,
+          "openTime": "08:02:40.150",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:13:11.543",
+              "id": "8a13c24b-c7db-4f25-b081-4147aa982fb7",
+              "lotsClosed": 0.08,
+              "percentageClosed": "50.00",
+              "pips": -18.4,
+              "price": 2672.32
+            },
+            "sl2": {
+              "closedTime": "08:56:49.843",
+              "id": "9b540903-b3c4-4a37-a340-a37ea61bf40b",
+              "lotsClosed": 0.04,
+              "percentageClosed": "25.00",
+              "pips": -6.9,
+              "price": 2673.47
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:37:26.207",
+              "id": "beb6b2b9-1690-40bc-8d83-b8763c172f66",
+              "lotsClosed": 0.04,
+              "percentageClosed": "25.00",
+              "pips": 37.7,
+              "price": 2677.93
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.16,
+          "totalPips": 12.400000000000004,
+          "totalProfit": -3.5199999999999987,
+          "trades": [
+            {
+              "balance": 9972.53,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2672.32,
+              "closingQuantity": 0.08,
+              "closingTime": "08:13:11.543",
+              "entryPrice": 2674.16,
+              "id": "de3e80fa-cc15-407d-9792-3c15fd01a806",
+              "net": -15.28,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:02:40.150",
+              "pips": -18.4,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9987.33,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2677.93,
+              "closingQuantity": 0.04,
+              "closingTime": "08:37:26.207",
+              "entryPrice": 2674.16,
+              "id": "c98ea334-a28f-4e6d-a898-5e5b6acb377b",
+              "net": 14.8,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:02:40.150",
+              "pips": 37.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9992.05,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2673.47,
+              "closingQuantity": 0.04,
+              "closingTime": "08:56:49.843",
+              "entryPrice": 2674.16,
+              "id": "c45dad5a-3a99-43b4-95ce-5e463549842b",
+              "net": -3.04,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:02:40.150",
+              "pips": -6.9,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:56:49.844",
+          "date": "09/01/2025",
+          "finalClose": 2673.47,
+          "id": "01d139a7-995b-459c-826f-5486c7457ff8",
+          "openPrice": 2675.92,
+          "openTime": "08:21:15.880",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:56:49.844",
+              "id": "6aff473a-98f9-4a42-8508-58b15ae8329f",
+              "lotsClosed": 0.04,
+              "percentageClosed": "50.00",
+              "pips": -24.5,
+              "price": 2673.47
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:37:26.215",
+              "id": "a27706ef-062d-4f20-8a64-d6c2a15d7cdf",
+              "lotsClosed": 0.04,
+              "percentageClosed": "50.00",
+              "pips": 20.1,
+              "price": 2677.93
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.08,
+          "totalPips": -4.399999999999999,
+          "totalProfit": -2.3200000000000003,
+          "trades": [
+            {
+              "balance": 9995.09,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2677.93,
+              "closingQuantity": 0.04,
+              "closingTime": "08:37:26.215",
+              "entryPrice": 2675.92,
+              "id": "1be3842f-94b7-434f-baff-34664f8b04d8",
+              "net": 7.76,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:21:15.880",
+              "pips": 20.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9981.97,
+              "closingDate": "09/01/2025",
+              "closingPrice": 2673.47,
+              "closingQuantity": 0.04,
+              "closingTime": "08:56:49.844",
+              "entryPrice": 2675.92,
+              "id": "5579aa55-3a08-47fd-9c63-9e4ce26ae626",
+              "net": -10.08,
+              "openingDate": "09/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:21:15.880",
+              "pips": -24.5,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:42:53.631",
+          "date": "10/01/2025",
+          "finalClose": 2677.46,
+          "id": "d1bfeb3d-eb75-4018-8982-9109bb7f5516",
+          "openPrice": 2675.35,
+          "openTime": "07:40:00.351",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:41:16.997",
+              "id": "7882081f-e6bf-482a-89a1-2bd6c90808c5",
+              "lotsClosed": 0.09,
+              "percentageClosed": "50.00",
+              "pips": -20,
+              "price": 2677.35
+            },
+            "sl2": {
+              "closedTime": "07:42:53.631",
+              "id": "cbda12d4-37fc-4266-a009-93bf021e2da1",
+              "lotsClosed": 0.09,
+              "percentageClosed": "50.00",
+              "pips": -21.1,
+              "price": 2677.46
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.18,
+          "totalPips": -41.1,
+          "totalProfit": -38.260000000000005,
+          "trades": [
+            {
+              "balance": 9963.33,
+              "closingDate": "10/01/2025",
+              "closingPrice": 2677.35,
+              "closingQuantity": 0.09,
+              "closingTime": "07:41:16.997",
+              "entryPrice": 2675.35,
+              "id": "78da6aa4-232c-4475-b0cf-6038ff4caa72",
+              "net": -18.64,
+              "openingDate": "10/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "07:40:00.351",
+              "pips": -20,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9943.71,
+              "closingDate": "10/01/2025",
+              "closingPrice": 2677.46,
+              "closingQuantity": 0.09,
+              "closingTime": "07:42:53.631",
+              "entryPrice": 2675.35,
+              "id": "7fd0b1ee-c958-4515-bd30-fe7d7feb828e",
+              "net": -19.62,
+              "openingDate": "10/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "07:40:00.351",
+              "pips": -21.1,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:47:02.336",
+          "date": "10/01/2025",
+          "finalClose": 2675.03,
+          "id": "8b45d3e1-1678-4c45-b4e0-4d8b13649d9b",
+          "openPrice": 2677.24,
+          "openTime": "08:45:59.129",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:47:02.336",
+              "id": "c48958c3-f7df-4de0-9e01-f91bb9c72d53",
+              "lotsClosed": 0.26,
+              "percentageClosed": "100.00",
+              "pips": -22.1,
+              "price": 2675.03
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.26,
+          "totalPips": -22.1,
+          "totalProfit": -59.28,
+          "trades": [
+            {
+              "balance": 9884.43,
+              "closingDate": "10/01/2025",
+              "closingPrice": 2675.03,
+              "closingQuantity": 0.26,
+              "closingTime": "08:47:02.336",
+              "entryPrice": 2677.24,
+              "id": "f8a3743e-c60e-420e-af04-c0e04b9029c4",
+              "net": -59.28,
+              "openingDate": "10/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:45:59.129",
+              "pips": -22.1,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:01:58.568",
+          "date": "10/01/2025",
+          "finalClose": 2681.36,
+          "id": "a1cc1eee-ab9d-4c9d-9c3a-cbec817f4a2b",
+          "openPrice": 2684.5,
+          "openTime": "09:00:51.696",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "09:01:58.568",
+              "id": "d7871790-0f74-46f9-aa24-c94cddb3e254",
+              "lotsClosed": 0.22,
+              "percentageClosed": "100.00",
+              "pips": -31.4,
+              "price": 2681.36
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.22,
+          "totalPips": -31.4,
+          "totalProfit": -70.62,
+          "trades": [
+            {
+              "balance": 9813.81,
+              "closingDate": "10/01/2025",
+              "closingPrice": 2681.36,
+              "closingQuantity": 0.22,
+              "closingTime": "09:01:58.568",
+              "entryPrice": 2684.5,
+              "id": "e1cb0ae6-19ee-4eff-98aa-25797eb83a7d",
+              "net": -70.62,
+              "openingDate": "10/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "09:00:51.696",
+              "pips": -31.4,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:09:23.232",
+          "date": "10/01/2025",
+          "finalClose": 2680.8,
+          "id": "6e5b3812-bba6-4320-881c-d48d17043aaf",
+          "openPrice": 2684.15,
+          "openTime": "09:02:23.179",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "09:09:23.232",
+              "id": "af8e8940-178d-4d71-adb8-b978f21e1f66",
+              "lotsClosed": 0.14,
+              "percentageClosed": "100.00",
+              "pips": -33.5,
+              "price": 2680.8
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.14,
+          "totalPips": -33.5,
+          "totalProfit": -47.88,
+          "trades": [
+            {
+              "balance": 9765.93,
+              "closingDate": "10/01/2025",
+              "closingPrice": 2680.8,
+              "closingQuantity": 0.14,
+              "closingTime": "09:09:23.232",
+              "entryPrice": 2684.15,
+              "id": "e5a5d2bd-60cb-4024-89de-c2253c753ffa",
+              "net": -47.88,
+              "openingDate": "10/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "09:02:23.179",
+              "pips": -33.5,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:32:14.482",
+          "date": "13/01/2025",
+          "finalClose": 2664.94,
+          "id": "3208f829-0cc5-42da-8fa2-a4286b08438c",
+          "openPrice": 2667.95,
+          "openTime": "07:31:33.115",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:32:14.482",
+              "id": "cbedd9c2-09fb-4ea0-b23d-51d3c747fb21",
+              "lotsClosed": 0.32,
+              "percentageClosed": "100.00",
+              "pips": 30.1,
+              "price": 2664.94
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.32,
+          "totalPips": 30.1,
+          "totalProfit": 94.08,
+          "trades": [
+            {
+              "balance": 9860.01,
+              "closingDate": "13/01/2025",
+              "closingPrice": 2664.94,
+              "closingQuantity": 0.32,
+              "closingTime": "07:32:14.482",
+              "entryPrice": 2667.95,
+              "id": "6302ff7d-bb6c-4a53-8005-cc5977ccff9c",
+              "net": 94.08,
+              "openingDate": "13/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "07:31:33.115",
+              "pips": 30.1,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:13:52.581",
+          "date": "14/01/2025",
+          "finalClose": 2668.88,
+          "id": "b482f898-2846-4479-8e67-9b6989b87857",
+          "openPrice": 2668.8,
+          "openTime": "08:00:47.251",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:12:29.165",
+              "id": "27139279-16c0-47ac-acb4-72336b32da0c",
+              "lotsClosed": 0.09,
+              "percentageClosed": "47.37",
+              "pips": 1.8,
+              "price": 2668.98
+            },
+            "tp2": {
+              "closedTime": "08:13:52.581",
+              "id": "9cfb7f93-4c86-4ad3-99c9-11674b0ae902",
+              "lotsClosed": 0.1,
+              "percentageClosed": "52.63",
+              "pips": 0.8,
+              "price": 2668.88
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.19,
+          "totalPips": 2.6,
+          "totalProfit": 1.08,
+          "trades": [
+            {
+              "balance": 9860.99,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2668.98,
+              "closingQuantity": 0.09,
+              "closingTime": "08:12:29.165",
+              "entryPrice": 2668.8,
+              "id": "f1d623db-4788-45df-b29f-0d1fb92fb93a",
+              "net": 0.98,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:00:47.251",
+              "pips": 1.8,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9861.09,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2668.88,
+              "closingQuantity": 0.1,
+              "closingTime": "08:13:52.581",
+              "entryPrice": 2668.8,
+              "id": "b967b3c5-3019-4d6a-9677-948e22566c71",
+              "net": 0.1,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:00:47.251",
+              "pips": 0.8,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:46:12.803",
+          "date": "14/01/2025",
+          "finalClose": 2668.1,
+          "id": "ffbfc41c-2b4d-48ab-985b-454c6fc955a6",
+          "openPrice": 2663.62,
+          "openTime": "08:41:59.505",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:46:12.803",
+              "id": "b0a30643-b48e-4807-aa06-97d67760d10c",
+              "lotsClosed": 0.12,
+              "percentageClosed": "100.00",
+              "pips": -44.8,
+              "price": 2668.1
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": -44.8,
+          "totalProfit": -54.6,
+          "trades": [
+            {
+              "balance": 9806.49,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2668.1,
+              "closingQuantity": 0.12,
+              "closingTime": "08:46:12.803",
+              "entryPrice": 2663.62,
+              "id": "f3aa8e98-c346-4391-95c4-51a0f67f69dc",
+              "net": -54.6,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:41:59.505",
+              "pips": -44.8,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:53:20.369",
+          "date": "14/01/2025",
+          "finalClose": 2664.4,
+          "id": "3ec6c30b-2d21-4787-8950-db619d0246d2",
+          "openPrice": 2662.18,
+          "openTime": "09:01:52.350",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "09:04:21.973",
+              "id": "c50addfc-9fff-4709-864d-d1fd279dc05a",
+              "lotsClosed": 0.12,
+              "percentageClosed": "50.00",
+              "pips": -10.7,
+              "price": 2663.25
+            },
+            "sl2": {
+              "closedTime": "09:53:20.369",
+              "id": "b0b31704-e24f-4726-a8de-172314e09069",
+              "lotsClosed": 0.12,
+              "percentageClosed": "50.00",
+              "pips": -22.2,
+              "price": 2664.4
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.24,
+          "totalPips": -32.9,
+          "totalProfit": -41.16,
+          "trades": [
+            {
+              "balance": 9792.81,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2663.25,
+              "closingQuantity": 0.12,
+              "closingTime": "09:04:21.973",
+              "entryPrice": 2662.18,
+              "id": "e3530fd2-8c39-40db-9738-bf1a444761ab",
+              "net": -13.68,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "09:01:52.350",
+              "pips": -10.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9740.85,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2664.4,
+              "closingQuantity": 0.12,
+              "closingTime": "09:53:20.369",
+              "entryPrice": 2662.18,
+              "id": "82f410af-a329-4022-bb4c-55a98a14666d",
+              "net": -27.48,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "09:01:52.350",
+              "pips": -22.2,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:53:20.355",
+          "date": "14/01/2025",
+          "finalClose": 2664.4,
+          "id": "8037ae63-bab6-422e-ae9f-f0b2d0518ce9",
+          "openPrice": 2662.43,
+          "openTime": "09:05:26.214",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "09:53:20.355",
+              "id": "a2f997a2-36ee-4b1e-ad7e-46dbc25f9c0f",
+              "lotsClosed": 0.12,
+              "percentageClosed": "100.00",
+              "pips": -19.7,
+              "price": 2664.4
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": -19.7,
+          "totalProfit": -24.48,
+          "trades": [
+            {
+              "balance": 9768.33,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2664.4,
+              "closingQuantity": 0.12,
+              "closingTime": "09:53:20.355",
+              "entryPrice": 2662.43,
+              "id": "526bab15-b014-4a12-a7ef-bbe5d14053e0",
+              "net": -24.48,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "09:05:26.214",
+              "pips": -19.7,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:53:20.562",
+          "date": "14/01/2025",
+          "finalClose": 2664.43,
+          "id": "1b7dca96-9a16-4d64-b319-8b4fd5864634",
+          "openPrice": 2661.03,
+          "openTime": "09:05:45.284",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "09:53:20.562",
+              "id": "aa245d8a-eea5-4d0a-9025-8bf68ceb92ac",
+              "lotsClosed": 0.12,
+              "percentageClosed": "100.00",
+              "pips": -34,
+              "price": 2664.43
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": -34,
+          "totalProfit": -41.64,
+          "trades": [
+            {
+              "balance": 9699.21,
+              "closingDate": "14/01/2025",
+              "closingPrice": 2664.43,
+              "closingQuantity": 0.12,
+              "closingTime": "09:53:20.562",
+              "entryPrice": 2661.03,
+              "id": "ac8d5f2a-31c0-4f0d-80b0-bcb572ac1db9",
+              "net": -41.64,
+              "openingDate": "14/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "09:05:45.284",
+              "pips": -34,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:04:16.960",
+          "date": "15/01/2025",
+          "finalClose": 2685.43,
+          "id": "0838e5ba-fa27-4c4c-9b33-2348d62d31e3",
+          "openPrice": 2687.28,
+          "openTime": "07:02:02.669",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:04:16.823",
+              "id": "bf4fe675-b600-4db6-9571-37d8c10d39f0",
+              "lotsClosed": 0.21,
+              "percentageClosed": "51.22",
+              "pips": -17.7,
+              "price": 2685.51
+            },
+            "sl2": {
+              "closedTime": "07:04:16.960",
+              "id": "c6816510-9b1d-44ac-bf3c-48011db371e0",
+              "lotsClosed": 0.2,
+              "percentageClosed": "48.78",
+              "pips": -18.5,
+              "price": 2685.43
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.41000000000000003,
+          "totalPips": -36.2,
+          "totalProfit": -77.05,
+          "trades": [
+            {
+              "balance": 9660.56,
+              "closingDate": "15/01/2025",
+              "closingPrice": 2685.51,
+              "closingQuantity": 0.21,
+              "closingTime": "07:04:16.823",
+              "entryPrice": 2687.28,
+              "id": "41e9a106-509a-4e6e-ad23-a6f4ec16084e",
+              "net": -38.65,
+              "openingDate": "15/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:02:02.669",
+              "pips": -17.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9622.16,
+              "closingDate": "15/01/2025",
+              "closingPrice": 2685.43,
+              "closingQuantity": 0.2,
+              "closingTime": "07:04:16.960",
+              "entryPrice": 2687.28,
+              "id": "a4897638-5ce0-43aa-a9e0-c2f6f6f3e66a",
+              "net": -38.4,
+              "openingDate": "15/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:02:02.669",
+              "pips": -18.5,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:20:02.554",
+          "date": "21/01/2025",
+          "finalClose": 2729.4,
+          "id": "ca8b72ce-05e3-4ce0-aa11-ec3818af93dc",
+          "openPrice": 2723.52,
+          "openTime": "07:03:39.447",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:06:14.436",
+              "id": "eaf5d576-d647-47e6-a514-d7bc2a18072d",
+              "lotsClosed": 0.07,
+              "percentageClosed": "53.85",
+              "pips": -8.6,
+              "price": 2722.66
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:21:58.394",
+              "id": "26b06446-609b-410c-9389-907f9d2b4b26",
+              "lotsClosed": 0.03,
+              "percentageClosed": "23.08",
+              "pips": 20.4,
+              "price": 2725.56
+            },
+            "tp2": {
+              "closedTime": "07:41:34.577",
+              "id": "1f9e062f-67f8-456a-9f65-e4955f6800b4",
+              "lotsClosed": 0.02,
+              "percentageClosed": "15.38",
+              "pips": 33.4,
+              "price": 2726.86
+            },
+            "tp3": {
+              "closedTime": "08:20:02.554",
+              "id": "874252d1-c8a9-4bb1-96ff-2cb54d11dc10",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 58.8,
+              "price": 2729.4
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.13,
+          "totalPips": 104,
+          "totalProfit": 11.73,
+          "trades": [
+            {
+              "balance": 9615.64,
+              "closingDate": "21/01/2025",
+              "closingPrice": 2722.66,
+              "closingQuantity": 0.07,
+              "closingTime": "07:06:14.436",
+              "entryPrice": 2723.52,
+              "id": "4645eea3-531a-48bd-8bfe-6e2cbc7b5623",
+              "net": -6.52,
+              "openingDate": "21/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:03:39.447",
+              "pips": -8.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9621.54,
+              "closingDate": "21/01/2025",
+              "closingPrice": 2725.56,
+              "closingQuantity": 0.03,
+              "closingTime": "07:21:58.394",
+              "entryPrice": 2723.52,
+              "id": "a99104ed-faab-4355-b584-492977e18c10",
+              "net": 5.9,
+              "openingDate": "21/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:03:39.447",
+              "pips": 20.4,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9635.62,
+              "closingDate": "21/01/2025",
+              "closingPrice": 2726.86,
+              "closingQuantity": 0.02,
+              "closingTime": "07:41:34.577",
+              "entryPrice": 2723.52,
+              "id": "f0471d49-9717-4391-8c23-c58825f54c6b",
+              "net": 6.54,
+              "openingDate": "21/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:03:39.447",
+              "pips": 33.4,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9641.43,
+              "closingDate": "21/01/2025",
+              "closingPrice": 2729.4,
+              "closingQuantity": 0.01,
+              "closingTime": "08:20:02.554",
+              "entryPrice": 2723.52,
+              "id": "93486c21-f100-4897-a3c9-9bd439c71601",
+              "net": 5.81,
+              "openingDate": "21/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:03:39.447",
+              "pips": 58.8,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:22:11.419",
+          "date": "21/01/2025",
+          "finalClose": 2724.77,
+          "id": "21cd7fc7-703c-4057-9b3c-f0121a00fa4b",
+          "openPrice": 2724.3,
+          "openTime": "07:14:35.500",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:21:58.395",
+              "id": "f690fbcf-94a2-4055-9a79-62fb10e69844",
+              "lotsClosed": 0.05,
+              "percentageClosed": "55.56",
+              "pips": 12.6,
+              "price": 2725.56
+            },
+            "tp2": {
+              "closedTime": "07:22:11.419",
+              "id": "561715b1-2d0e-45a9-a9c7-62c4f94cc495",
+              "lotsClosed": 0.04,
+              "percentageClosed": "44.44",
+              "pips": 4.7,
+              "price": 2724.77
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.09,
+          "totalPips": 17.3,
+          "totalProfit": 7.540000000000001,
+          "trades": [
+            {
+              "balance": 9627.48,
+              "closingDate": "21/01/2025",
+              "closingPrice": 2725.56,
+              "closingQuantity": 0.05,
+              "closingTime": "07:21:58.395",
+              "entryPrice": 2724.3,
+              "id": "0ec60b22-97cc-42c9-81de-c4506a0ee842",
+              "net": 5.94,
+              "openingDate": "21/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:14:35.500",
+              "pips": 12.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9629.08,
+              "closingDate": "21/01/2025",
+              "closingPrice": 2724.77,
+              "closingQuantity": 0.04,
+              "closingTime": "07:22:11.419",
+              "entryPrice": 2724.3,
+              "id": "b050d7a4-f84d-462c-bce8-f58735c659f3",
+              "net": 1.6,
+              "openingDate": "21/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:14:35.500",
+              "pips": 4.7,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:36:10.846",
+          "date": "22/01/2025",
+          "finalClose": 2753.43,
+          "id": "405f77e0-c40a-4df1-b1a3-ae7b664b239b",
+          "openPrice": 2753.27,
+          "openTime": "08:33:25.932",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:34:09.332",
+              "id": "22baa0f0-dc60-4fd3-b581-2fca89df7ba1",
+              "lotsClosed": 0.06,
+              "percentageClosed": "50.00",
+              "pips": -14.1,
+              "price": 2754.68
+            },
+            "sl2": {
+              "closedTime": "08:36:10.846",
+              "id": "9a18b002-2113-483d-ba42-811a09497131",
+              "lotsClosed": 0.03,
+              "percentageClosed": "25.00",
+              "pips": -1.6,
+              "price": 2753.43
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:35:38.346",
+              "id": "284de042-aed2-4643-8886-542c654a4056",
+              "lotsClosed": 0.03,
+              "percentageClosed": "25.00",
+              "pips": 13.9,
+              "price": 2751.88
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": -1.7999999999999994,
+          "totalProfit": -5.620000000000001,
+          "trades": [
+            {
+              "balance": 9632.55,
+              "closingDate": "22/01/2025",
+              "closingPrice": 2754.68,
+              "closingQuantity": 0.06,
+              "closingTime": "08:34:09.332",
+              "entryPrice": 2753.27,
+              "id": "1bb22cb4-50cc-4faa-a840-d1a1ce9d8f5a",
+              "net": -8.88,
+              "openingDate": "22/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:33:25.932",
+              "pips": -14.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9636.5,
+              "closingDate": "22/01/2025",
+              "closingPrice": 2751.88,
+              "closingQuantity": 0.03,
+              "closingTime": "08:35:38.346",
+              "entryPrice": 2753.27,
+              "id": "e1a29983-20be-4cbb-b9f7-8fd60f9291a8",
+              "net": 3.95,
+              "openingDate": "22/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:33:25.932",
+              "pips": 13.9,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9635.81,
+              "closingDate": "22/01/2025",
+              "closingPrice": 2753.43,
+              "closingQuantity": 0.03,
+              "closingTime": "08:36:10.846",
+              "entryPrice": 2753.27,
+              "id": "93b20696-37ab-46a2-a1d8-ed56577b2f75",
+              "net": -0.69,
+              "openingDate": "22/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:33:25.932",
+              "pips": -1.6,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:00:43.698",
+          "date": "24/01/2025",
+          "finalClose": 2782.74,
+          "id": "8359fa8a-b9aa-477a-9798-bb3025a95502",
+          "openPrice": 2778.59,
+          "openTime": "07:41:04.843",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:58:57.939",
+              "id": "7fcb3ace-694f-46b5-bacb-a92c3f85031b",
+              "lotsClosed": 0.07,
+              "percentageClosed": "53.85",
+              "pips": -10.4,
+              "price": 2777.55
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:08:01.892",
+              "id": "a09d4cc2-b28e-419c-bb83-8da9eb8182ce",
+              "lotsClosed": 0.03,
+              "percentageClosed": "23.08",
+              "pips": 18.1,
+              "price": 2780.4
+            },
+            "tp2": {
+              "closedTime": "08:13:48.853",
+              "id": "827471f5-e5db-41c0-b5d8-0d01e0a15f33",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 33.3,
+              "price": 2781.92
+            },
+            "tp3": {
+              "closedTime": "08:42:02.364",
+              "id": "e0447eab-b908-4733-93ba-e558cffb190c",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 50.7,
+              "price": 2783.66
+            },
+            "tp4": {
+              "closedTime": "09:00:43.698",
+              "id": "1a624716-83d7-47d2-86a2-55154e3cbba8",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 41.5,
+              "price": 2782.74
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.13,
+          "totalPips": 133.2,
+          "totalProfit": 9.76,
+          "trades": [
+            {
+              "balance": 9628.03,
+              "closingDate": "24/01/2025",
+              "closingPrice": 2777.55,
+              "closingQuantity": 0.07,
+              "closingTime": "07:58:57.939",
+              "entryPrice": 2778.59,
+              "id": "6ae9e065-75f8-47f5-824b-9bdf08511e34",
+              "net": -7.78,
+              "openingDate": "24/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:41:04.843",
+              "pips": -10.4,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9633.24,
+              "closingDate": "24/01/2025",
+              "closingPrice": 2780.4,
+              "closingQuantity": 0.03,
+              "closingTime": "08:08:01.892",
+              "entryPrice": 2778.59,
+              "id": "d886f02f-4c2d-445f-bae6-e454dd4a34b5",
+              "net": 5.21,
+              "openingDate": "24/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:41:04.843",
+              "pips": 18.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9636.49,
+              "closingDate": "24/01/2025",
+              "closingPrice": 2781.92,
+              "closingQuantity": 0.01,
+              "closingTime": "08:13:48.853",
+              "entryPrice": 2778.59,
+              "id": "bfa4bca4-7222-4b1f-b93b-b7e268c555b2",
+              "net": 3.25,
+              "openingDate": "24/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:41:04.843",
+              "pips": 33.3,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9641.49,
+              "closingDate": "24/01/2025",
+              "closingPrice": 2783.66,
+              "closingQuantity": 0.01,
+              "closingTime": "08:42:02.364",
+              "entryPrice": 2778.59,
+              "id": "4ce40c2b-598a-480d-8672-1dfc384d1017",
+              "net": 5,
+              "openingDate": "24/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:41:04.843",
+              "pips": 50.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9645.57,
+              "closingDate": "24/01/2025",
+              "closingPrice": 2782.74,
+              "closingQuantity": 0.01,
+              "closingTime": "09:00:43.698",
+              "entryPrice": 2778.59,
+              "id": "30e1053b-4dfd-4312-8efd-883e4daa5cff",
+              "net": 4.08,
+              "openingDate": "24/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:41:04.843",
+              "pips": 41.5,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:36:01.335",
+          "date": "27/01/2025",
+          "finalClose": 2761.15,
+          "id": "a1769450-c6c2-4443-be90-1b1ce28928e8",
+          "openPrice": 2763.09,
+          "openTime": "07:32:23.160",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:32:42.638",
+              "id": "844fb5ad-3aeb-4275-8fb0-13949829fa25",
+              "lotsClosed": 0.07,
+              "percentageClosed": "53.85",
+              "pips": -11.7,
+              "price": 2761.92
+            },
+            "sl2": {
+              "closedTime": "07:36:01.335",
+              "id": "852fbaba-696b-48c1-aa1b-5f6206dbdd93",
+              "lotsClosed": 0.06,
+              "percentageClosed": "46.15",
+              "pips": -19.4,
+              "price": 2761.15
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.13,
+          "totalPips": -31.099999999999998,
+          "totalProfit": -20.75,
+          "trades": [
+            {
+              "balance": 9636.88,
+              "closingDate": "27/01/2025",
+              "closingPrice": 2761.92,
+              "closingQuantity": 0.07,
+              "closingTime": "07:32:42.638",
+              "entryPrice": 2763.09,
+              "id": "82c59ad6-2056-4df5-ab3c-3d6a7cda1c6f",
+              "net": -8.69,
+              "openingDate": "27/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:32:23.160",
+              "pips": -11.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9624.82,
+              "closingDate": "27/01/2025",
+              "closingPrice": 2761.15,
+              "closingQuantity": 0.06,
+              "closingTime": "07:36:01.335",
+              "entryPrice": 2763.09,
+              "id": "575828eb-2320-4eed-a438-6d2a81085685",
+              "net": -12.06,
+              "openingDate": "27/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:32:23.160",
+              "pips": -19.4,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:31:03.043",
+          "date": "28/01/2025",
+          "finalClose": 2743.85,
+          "id": "7d1f4de3-48d7-4b62-a57f-78a3c27213f1",
+          "openPrice": 2741.81,
+          "openTime": "07:07:05.424",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:16:16.375",
+              "id": "352d11f4-9b5d-4cf9-b299-41abaa85ce64",
+              "lotsClosed": 0.06,
+              "percentageClosed": "50.00",
+              "pips": -8.6,
+              "price": 2742.67
+            },
+            "sl2": {
+              "closedTime": "07:31:03.043",
+              "id": "8a1381db-522f-4131-b5ed-6fbf61bc212c",
+              "lotsClosed": 0.06,
+              "percentageClosed": "50.00",
+              "pips": -20.4,
+              "price": 2743.85
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": -29,
+          "totalProfit": -18.240000000000002,
+          "trades": [
+            {
+              "balance": 9619.24,
+              "closingDate": "28/01/2025",
+              "closingPrice": 2742.67,
+              "closingQuantity": 0.06,
+              "closingTime": "07:16:16.375",
+              "entryPrice": 2741.81,
+              "id": "b30b9d75-7ae0-497d-a8b5-93f735d050d8",
+              "net": -5.58,
+              "openingDate": "28/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "07:07:05.424",
+              "pips": -8.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9606.58,
+              "closingDate": "28/01/2025",
+              "closingPrice": 2743.85,
+              "closingQuantity": 0.06,
+              "closingTime": "07:31:03.043",
+              "entryPrice": 2741.81,
+              "id": "75ec6ed0-1f02-4396-a8ec-fc886a41c160",
+              "net": -12.66,
+              "openingDate": "28/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "07:07:05.424",
+              "pips": -20.4,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:18:07.710",
+          "date": "29/01/2025",
+          "finalClose": 2753.11,
+          "id": "c9f55494-32e1-45f1-9722-08f6864c8431",
+          "openPrice": 2758.15,
+          "openTime": "08:00:33.231",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "08:01:02.545",
+              "id": "4b390606-60a8-4489-9f0c-95e30ee22951",
+              "lotsClosed": 0.07,
+              "percentageClosed": "53.85",
+              "pips": -8,
+              "price": 2758.95
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:17:16.029",
+              "id": "7fef3787-38a0-4f8d-88db-0307b1e9b798",
+              "lotsClosed": 0.03,
+              "percentageClosed": "23.08",
+              "pips": 24.6,
+              "price": 2755.69
+            },
+            "tp2": {
+              "closedTime": "08:18:01.583",
+              "id": "baf83d2d-6590-480c-bb3b-d15ceded95d3",
+              "lotsClosed": 0.01,
+              "percentageClosed": "7.69",
+              "pips": 45.5,
+              "price": 2753.6
+            },
+            "tp3": {
+              "closedTime": "08:18:07.710",
+              "id": "49a1d968-b4bb-4a1c-aacc-34050c6b1d01",
+              "lotsClosed": 0.02,
+              "percentageClosed": "15.38",
+              "pips": 50.4,
+              "price": 2753.11
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.13,
+          "totalPips": 112.5,
+          "totalProfit": 15.48,
+          "trades": [
+            {
+              "balance": 9600.48,
+              "closingDate": "29/01/2025",
+              "closingPrice": 2758.95,
+              "closingQuantity": 0.07,
+              "closingTime": "08:01:02.545",
+              "entryPrice": 2758.15,
+              "id": "f47b0ebd-95af-4028-8ca7-3471a5f35c74",
+              "net": -6.1,
+              "openingDate": "29/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:00:33.231",
+              "pips": -8,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9607.64,
+              "closingDate": "29/01/2025",
+              "closingPrice": 2755.69,
+              "closingQuantity": 0.03,
+              "closingTime": "08:17:16.029",
+              "entryPrice": 2758.15,
+              "id": "21c439d1-7dd3-4144-a0da-cb7824952cbd",
+              "net": 7.16,
+              "openingDate": "29/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:00:33.231",
+              "pips": 24.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9612.11,
+              "closingDate": "29/01/2025",
+              "closingPrice": 2753.6,
+              "closingQuantity": 0.01,
+              "closingTime": "08:18:01.583",
+              "entryPrice": 2758.15,
+              "id": "fbfcc898-dd6b-4960-808a-6ef1f609ca78",
+              "net": 4.47,
+              "openingDate": "29/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:00:33.231",
+              "pips": 45.5,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9622.06,
+              "closingDate": "29/01/2025",
+              "closingPrice": 2753.11,
+              "closingQuantity": 0.02,
+              "closingTime": "08:18:07.710",
+              "entryPrice": 2758.15,
+              "id": "4deeecdb-8cac-4e4f-8173-96263e406099",
+              "net": 9.95,
+              "openingDate": "29/01/2025",
+              "openingDirection": "Sell",
+              "openingTime": "08:00:33.231",
+              "pips": 50.4,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:10:01.836",
+          "date": "30/01/2025",
+          "finalClose": 2781.41,
+          "id": "8125dc2a-e6ab-4a6c-8f74-db22b0695ac5",
+          "openPrice": 2779.06,
+          "openTime": "07:35:20.625",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:43:37.025",
+              "id": "695f2d8d-0621-47f4-a856-6062b500d2e8",
+              "lotsClosed": 0.07,
+              "percentageClosed": "46.67",
+              "pips": 14.8,
+              "price": 2780.54
+            },
+            "tp2": {
+              "closedTime": "08:00:18.629",
+              "id": "b53805c5-5c07-42ae-a18c-4e5e9d12a56a",
+              "lotsClosed": 0.06,
+              "percentageClosed": "40.00",
+              "pips": 12.6,
+              "price": 2780.32
+            },
+            "tp3": {
+              "closedTime": "08:02:21.906",
+              "id": "3082c85c-0674-4a11-86c3-bce739aa4e7d",
+              "lotsClosed": 0.01,
+              "percentageClosed": "6.67",
+              "pips": 34.7,
+              "price": 2782.53
+            },
+            "tp4": {
+              "closedTime": "08:10:01.836",
+              "id": "134f7723-475a-4895-be55-4ab5fe2587ef",
+              "lotsClosed": 0.01,
+              "percentageClosed": "6.67",
+              "pips": 23.5,
+              "price": 2781.41
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.15000000000000002,
+          "totalPips": 85.6,
+          "totalProfit": 22.67,
+          "trades": [
+            {
+              "balance": 9631.92,
+              "closingDate": "30/01/2025",
+              "closingPrice": 2780.54,
+              "closingQuantity": 0.07,
+              "closingTime": "07:43:37.025",
+              "entryPrice": 2779.06,
+              "id": "d4c881d5-668c-4ea4-884e-8b0f4b7b2775",
+              "net": 9.86,
+              "openingDate": "30/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:35:20.625",
+              "pips": 14.8,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9639.06,
+              "closingDate": "30/01/2025",
+              "closingPrice": 2780.32,
+              "closingQuantity": 0.06,
+              "closingTime": "08:00:18.629",
+              "entryPrice": 2779.06,
+              "id": "53590a46-b18e-4170-b743-695653e8ff91",
+              "net": 7.14,
+              "openingDate": "30/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:35:20.625",
+              "pips": 12.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9642.45,
+              "closingDate": "30/01/2025",
+              "closingPrice": 2782.53,
+              "closingQuantity": 0.01,
+              "closingTime": "08:02:21.906",
+              "entryPrice": 2779.06,
+              "id": "f5c66095-c036-42b6-99ca-1b8bf0449efb",
+              "net": 3.39,
+              "openingDate": "30/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:35:20.625",
+              "pips": 34.7,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9644.73,
+              "closingDate": "30/01/2025",
+              "closingPrice": 2781.41,
+              "closingQuantity": 0.01,
+              "closingTime": "08:10:01.836",
+              "entryPrice": 2779.06,
+              "id": "788024ff-3bd2-4ba1-b862-480a27c2a246",
+              "net": 2.28,
+              "openingDate": "30/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:35:20.625",
+              "pips": 23.5,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:03:33.896",
+          "date": "31/01/2025",
+          "finalClose": 2804,
+          "id": "d8229898-c8b6-4eed-b177-cbb244f75200",
+          "openPrice": 2801.35,
+          "openTime": "07:02:46.481",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:16:13.847",
+              "id": "390a53c1-4dcc-4cea-8dce-662a4d660e64",
+              "lotsClosed": 0.06,
+              "percentageClosed": "50.00",
+              "pips": 20.9,
+              "price": 2803.44
+            },
+            "tp2": {
+              "closedTime": "07:19:37.747",
+              "id": "e0080838-ca12-4e82-b77c-b753286667c6",
+              "lotsClosed": 0.03,
+              "percentageClosed": "25.00",
+              "pips": 37.9,
+              "price": 2805.14
+            },
+            "tp3": {
+              "closedTime": "07:36:31.649",
+              "id": "00e5383d-684e-4ae0-93a0-41549c8bc072",
+              "lotsClosed": 0.01,
+              "percentageClosed": "8.33",
+              "pips": 50.1,
+              "price": 2806.36
+            },
+            "tp4": {
+              "closedTime": "08:03:33.896",
+              "id": "20f5e429-e37a-4e43-ab1e-b4d9733e2763",
+              "lotsClosed": 0.02,
+              "percentageClosed": "16.67",
+              "pips": 26.5,
+              "price": 2804
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": 135.4,
+          "totalProfit": 33.37,
+          "trades": [
+            {
+              "balance": 9656.85,
+              "closingDate": "31/01/2025",
+              "closingPrice": 2803.44,
+              "closingQuantity": 0.06,
+              "closingTime": "07:16:13.847",
+              "entryPrice": 2801.35,
+              "id": "159348d2-f33b-48e1-8a60-00f99588339d",
+              "net": 12.12,
+              "openingDate": "31/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:02:46.481",
+              "pips": 20.9,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9668,
+              "closingDate": "31/01/2025",
+              "closingPrice": 2805.14,
+              "closingQuantity": 0.03,
+              "closingTime": "07:19:37.747",
+              "entryPrice": 2801.35,
+              "id": "bbf4ab6d-c426-47d3-9f53-b54ec0a2ada7",
+              "net": 11.15,
+              "openingDate": "31/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:02:46.481",
+              "pips": 37.9,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9672.93,
+              "closingDate": "31/01/2025",
+              "closingPrice": 2806.36,
+              "closingQuantity": 0.01,
+              "closingTime": "07:36:31.649",
+              "entryPrice": 2801.35,
+              "id": "c0c71eb2-8d4e-407d-9ce8-ed2abf5817c1",
+              "net": 4.93,
+              "openingDate": "31/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:02:46.481",
+              "pips": 50.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9678.1,
+              "closingDate": "31/01/2025",
+              "closingPrice": 2804,
+              "closingQuantity": 0.02,
+              "closingTime": "08:03:33.896",
+              "entryPrice": 2801.35,
+              "id": "95374ec6-a366-44ba-9ac6-3ae27bb1ce7f",
+              "net": 5.17,
+              "openingDate": "31/01/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:02:46.481",
+              "pips": 26.5,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "09:01:04.414",
+          "date": "03/02/2025",
+          "finalClose": 2811.04,
+          "id": "087795e0-f021-4fed-875f-e513e7e7ead6",
+          "openPrice": 2802.43,
+          "openTime": "07:09:32.057",
+          "partialSL": {
+            "sl1": {
+              "closedTime": "07:12:39.795",
+              "id": "96a68407-6d8a-443f-8fa4-ae858797585f",
+              "lotsClosed": 0.05,
+              "percentageClosed": "55.56",
+              "pips": -9.1,
+              "price": 2801.52
+            }
+          },
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:39:49.293",
+              "id": "041f6280-05e1-4f9c-b4fd-c808f303c1e8",
+              "lotsClosed": 0.02,
+              "percentageClosed": "22.22",
+              "pips": 61.1,
+              "price": 2808.54
+            },
+            "tp2": {
+              "closedTime": "08:09:32.428",
+              "id": "56f6d9c7-1ffe-4591-a3f0-edb2cff06b3e",
+              "lotsClosed": 0.01,
+              "percentageClosed": "11.11",
+              "pips": 54.6,
+              "price": 2807.89
+            },
+            "tp3": {
+              "closedTime": "09:01:04.414",
+              "id": "b52b6014-6eab-4f41-8da2-2aac462661b8",
+              "lotsClosed": 0.01,
+              "percentageClosed": "11.11",
+              "pips": 86.1,
+              "price": 2811.04
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.09,
+          "totalPips": 192.7,
+          "totalProfit": 21.09,
+          "trades": [
+            {
+              "balance": 9673.19,
+              "closingDate": "03/02/2025",
+              "closingPrice": 2801.52,
+              "closingQuantity": 0.05,
+              "closingTime": "07:12:39.795",
+              "entryPrice": 2802.43,
+              "id": "9ad12568-3518-4c80-9b01-683bd42c9586",
+              "net": -4.91,
+              "openingDate": "03/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:09:32.057",
+              "pips": -9.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9717.81,
+              "closingDate": "03/02/2025",
+              "closingPrice": 2808.54,
+              "closingQuantity": 0.02,
+              "closingTime": "07:39:49.293",
+              "entryPrice": 2802.43,
+              "id": "0d97e741-337c-4a20-87ac-a53c5c1c8728",
+              "net": 12.08,
+              "openingDate": "03/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:09:32.057",
+              "pips": 61.1,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9723.19,
+              "closingDate": "03/02/2025",
+              "closingPrice": 2807.89,
+              "closingQuantity": 0.01,
+              "closingTime": "08:09:32.428",
+              "entryPrice": 2802.43,
+              "id": "f19d4f4e-305a-4823-b7c3-e43ca0a5594f",
+              "net": 5.38,
+              "openingDate": "03/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:09:32.057",
+              "pips": 54.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9731.73,
+              "closingDate": "03/02/2025",
+              "closingPrice": 2811.04,
+              "closingQuantity": 0.01,
+              "closingTime": "09:01:04.414",
+              "entryPrice": 2802.43,
+              "id": "6f48f217-1d07-4781-9f55-b7a3c4ec2458",
+              "net": 8.54,
+              "openingDate": "03/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:09:32.057",
+              "pips": 86.1,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "07:38:31.513",
+          "date": "03/02/2025",
+          "finalClose": 2807.13,
+          "id": "3f018658-3147-4bed-b006-3c7fdf44970f",
+          "openPrice": 2804.89,
+          "openTime": "07:32:59.948",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "07:38:31.513",
+              "id": "9b22a464-7b89-44ed-9398-38725c10240a",
+              "lotsClosed": 0.15,
+              "percentageClosed": "100.00",
+              "pips": 22.4,
+              "price": 2807.13
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.15,
+          "totalPips": 22.4,
+          "totalProfit": 32.54,
+          "trades": [
+            {
+              "balance": 9705.73,
+              "closingDate": "03/02/2025",
+              "closingPrice": 2807.13,
+              "closingQuantity": 0.15,
+              "closingTime": "07:38:31.513",
+              "entryPrice": 2804.89,
+              "id": "12b9254f-2145-499e-aa68-ce8b5596b43f",
+              "net": 32.54,
+              "openingDate": "03/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "07:32:59.948",
+              "pips": 22.4,
+              "symbol": "XAUUSD"
+            }
+          ]
+        },
+        {
+          "closeTime": "08:21:36.436",
+          "date": "04/02/2025",
+          "finalClose": 2829.42,
+          "id": "ca362554-a411-40aa-9f64-d084e7d285e0",
+          "openPrice": 2823.04,
+          "openTime": "08:05:58.014",
+          "partialTP": {
+            "tp1": {
+              "closedTime": "08:18:46.697",
+              "id": "bbddffd9-310f-480c-8296-e50bb65aaf85",
+              "lotsClosed": 0.09,
+              "percentageClosed": "75.00",
+              "pips": 24.9,
+              "price": 2825.53
+            },
+            "tp2": {
+              "closedTime": "08:20:11.403",
+              "id": "c3cf54f0-1ab0-4a27-a594-f0ee1c798e88",
+              "lotsClosed": 0.01,
+              "percentageClosed": "8.33",
+              "pips": 39.6,
+              "price": 2827
+            },
+            "tp3": {
+              "closedTime": "08:21:36.436",
+              "id": "42406799-132a-4b97-8490-f46a20ddf663",
+              "lotsClosed": 0.02,
+              "percentageClosed": "16.67",
+              "pips": 63.8,
+              "price": 2829.42
+            }
+          },
+          "symbol": "XAUUSD",
+          "totalCommission": 0,
+          "totalLots": 0.12,
+          "totalPips": 128.3,
+          "totalProfit": 38.28,
+          "trades": [
+            {
+              "balance": 9753.5,
+              "closingDate": "04/02/2025",
+              "closingPrice": 2825.53,
+              "closingQuantity": 0.09,
+              "closingTime": "08:18:46.697",
+              "entryPrice": 2823.04,
+              "id": "ba13a19d-cdc4-4d19-b0e6-9b0e2528190d",
+              "net": 21.77,
+              "openingDate": "04/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:05:58.014",
+              "pips": 24.9,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9757.38,
+              "closingDate": "04/02/2025",
+              "closingPrice": 2827,
+              "closingQuantity": 0.01,
+              "closingTime": "08:20:11.403",
+              "entryPrice": 2823.04,
+              "id": "9454079d-20f9-4a22-a4f6-491b0fd8ec33",
+              "net": 3.88,
+              "openingDate": "04/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:05:58.014",
+              "pips": 39.6,
+              "symbol": "XAUUSD"
+            },
+            {
+              "balance": 9770.01,
+              "closingDate": "04/02/2025",
+              "closingPrice": 2829.42,
+              "closingQuantity": 0.02,
+              "closingTime": "08:21:36.436",
+              "entryPrice": 2823.04,
+              "id": "d0f55dc3-e9c8-44b6-b92f-e2e08759af60",
+              "net": 12.63,
+              "openingDate": "04/02/2025",
+              "openingDirection": "Buy",
+              "openingTime": "08:05:58.014",
+              "pips": 63.8,
+              "symbol": "XAUUSD"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

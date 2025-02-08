@@ -1,7 +1,15 @@
 import * as XLSX from "xlsx";
 
-export const getJsonDataFromExcel = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
+export const getJsonDataFromExcel = async (event: React.ChangeEvent<HTMLInputElement> | React.DragEvent<HTMLDivElement> | File) => {
+    let file: File | null = null;
+
+    if (event instanceof File) {
+        file = event;
+    } else {
+        const input = event.target as HTMLInputElement;
+        file = input.files?.[0] || null;
+    }
+
     if (!file) return;
 
     const reader = new FileReader();
