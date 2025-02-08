@@ -26,7 +26,7 @@ export default function Home() {
                     </KpiGrid>
 
                     {/* Display your data here */}
-                    <TradeListDetails trades={specificTrade.trades} tradeId={Array.isArray(tradeId) ? tradeId[0] : tradeId || ''} id={Array.isArray(id) ? id[0] : id || ''}/>
+           
                     {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
                     <AccordionTable data={specificTrade.trades}/>
                 </div>
