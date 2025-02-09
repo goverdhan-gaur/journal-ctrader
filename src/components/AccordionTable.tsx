@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaEye } from "react-icons/fa";  
+import { CleanedTradeData } from "@/utils/cleanData";
 
-interface TradeData {
-  symbol: string;
-  openingDate: string;
-  openingTime: string;
-  entryPrice: number;
-  closingPrice: number;
-  closingQuantity: number;
-  net: number;
-  positions: number;
-}
 
 interface AccordionTableProps {
-  data: TradeData[];
+  data: CleanedTradeData[];
 }
 
 const AccordionTable = ({ data }: AccordionTableProps) => {
@@ -29,7 +20,7 @@ const AccordionTable = ({ data }: AccordionTableProps) => {
       <table className="w-full border-collapse shadow-lg rounded-xl overflow-hidden bg-gray-900 text-white">
         <thead className="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
           <tr>
-            {["Symbol", "Date", "Open Time", "Open Price", "Close Price", "Lots", "PnL", "Positions", "Actions"].map((heading) => (
+            {["Symbol", "Date", "Open Time", "Open Price", "Close Price", "Lots", "PnL", "Actions"].map((heading) => (
               <th key={heading} className="px-6 py-3 text-left uppercase text-sm font-semibold">
                 {heading}
               </th>
@@ -52,7 +43,6 @@ const AccordionTable = ({ data }: AccordionTableProps) => {
                 <td className={`px-6 py-4 font-semibold ${trade.net > 0 ? "text-green-400" : "text-red-500"}`}>
                   {trade.net}
                 </td>
-                <td className="px-6 py-4">{trade.positions}</td>
                 <td className="px-6 py-4">
                   <button className="bg-gray-700 hover:bg-gray-600 text-white px-3 py-2 rounded-lg flex items-center gap-2">
                     <FaEye /> View
