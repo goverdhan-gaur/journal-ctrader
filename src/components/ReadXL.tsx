@@ -1,20 +1,26 @@
 "use client";
-import useFileProcessing from '@/hooks/useFileProcessing';
-import { useModalStore } from '@/store/useModalStore';
-import { writeData } from '@/utils/addTradesData';
-import { generateOverview } from '@/utils/aggregatedOverview';
-import { cleanTradeData, convertKeysToCamelCase } from '@/utils/cleanData';
-import { getJsonDataFromExcel } from '@/utils/getJsonFromExcel';
-import { aggregateTrades } from '@/utils/groupedTrades';
-import React, { DragEventHandler } from 'react';
+import useFileProcessing from "@/hooks/useFileProcessing";
+import { useModalStore } from "@/store/useModalStore";
+import { writeData } from "@/utils/addTradesData";
+import { generateOverview } from "@/utils/aggregatedOverview";
+import { cleanTradeData, convertKeysToCamelCase } from "@/utils/cleanData";
+import { getJsonDataFromExcel } from "@/utils/getJsonFromExcel";
+import { aggregateTrades } from "@/utils/groupedTrades";
+import React, { DragEventHandler, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiUploadCloud, FiFile, FiLoader, FiCheckCircle } from "react-icons/fi";
 
 const ReadXL: React.FC = () => {
     const { closeModal } = useModalStore();
     const { isLoading, processFileData } = useFileProcessing();
+    const [isDragging, setIsDragging] = useState(false);
+    const [uploadSuccess, setUploadSuccess] = useState(false);
+
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
         if (!file) return;
 
+        setUploadSuccess(false);
         const data = await getJsonDataFromExcel(file);
         if (data) {
             processFileData(data, async (processedData) => {
@@ -25,9 +31,9 @@ const ReadXL: React.FC = () => {
                     const finalData = generateOverview(gTrades);
                     console.log(finalData);
                     await writeData(finalData);
-                    closeModal();
-                }
-                catch (e) {
+                    setUploadSuccess(true);
+                    setTimeout(closeModal, 1500);
+                } catch (e) {
                     console.log(e);
                 }
             });
@@ -36,78 +42,128 @@ const ReadXL: React.FC = () => {
 
     const handleDrop: DragEventHandler<HTMLDivElement> = async (event) => {
         event.preventDefault();
+        setIsDragging(false);
 
         const file = event.dataTransfer.files?.[0];
         if (!file) return;
 
-        const reader = new FileReader();
-        reader.onload = async (e) => {
-            if (!e.target?.result) return;
-            const data = await getJsonDataFromExcel(file);
-            if (data) {
-                processFileData(data, async (processedData) => {
-                    try {
-                        const cleanedKeys = convertKeysToCamelCase(processedData);
-                        const cleanedData = await cleanTradeData(cleanedKeys);
-                        const gTrades = aggregateTrades(cleanedData);
-                        const finalData = generateOverview(gTrades);
-                        console.log(finalData);
-                        await writeData(finalData);
-                        closeModal();
-                    }
-                    catch (e) {
-                        console.log(e);
-                    }
-                });
-            }
-        };
-        reader.readAsArrayBuffer(file);
+        setUploadSuccess(false);
+        const data = await getJsonDataFromExcel(file);
+        if (data) {
+            processFileData(data, async (processedData) => {
+                try {
+                    const cleanedKeys = convertKeysToCamelCase(processedData);
+                    const cleanedData = await cleanTradeData(cleanedKeys);
+                    const gTrades = aggregateTrades(cleanedData);
+                    const finalData = generateOverview(gTrades);
+                    console.log(finalData);
+                    await writeData(finalData);
+                    setUploadSuccess(true);
+                    setTimeout(closeModal, 1500);
+                } catch (e) {
+                    console.log(e);
+                }
+            });
+        }
+    };
+
+    const handleDragOver = (e: React.DragEvent) => {
+        e.preventDefault();
+        setIsDragging(true);
+    };
+
+    const handleDragLeave = (e: React.DragEvent) => {
+        e.preventDefault();
+        setIsDragging(false);
     };
 
     return (
-        <div className="flex flex-col items-center justify-center">
-            <div className="bg-white rounded-lg ">
-                <div className="mb-4 text-center">
-                    <h2 className="text-2xl font-semibold text-gray-900">Upload Your File</h2>
-                    <p className="text-gray-600">Drag & Drop your file here or click to upload</p>
-                </div>
-                {isLoading ? <div className='text-gray-600 flex items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-500'>
-                    <div role="status">
-                        <svg aria-hidden="true" className="w-4 h-4 me-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" /><path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill" /></svg>
-                        <span className="sr-only">Loading...</span>
-                    </div>
-                    Preparing your file
-                </div> : <div
-                    className="cursor-pointer flex items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500"
+        <div className="flex flex-col items-center justify-center w-full">
+            <motion.div
+                className={`w-full relative ${isLoading ? "pointer-events-none" : ""}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+            >
+                <div
+                    className={`
+                        relative group
+                        w-full h-48 
+                        rounded-xl
+                        transition-all duration-300
+                        ${isDragging
+                            ? "border-2 border-dashed border-blue-400 bg-blue-400/10 shadow-lg shadow-blue-400/50"
+                            : "border-2 border-dashed border-white/20 hover:border-blue-400/50 hover:bg-white/5"
+                        }
+                    `}
                     onDrop={handleDrop}
-                    onDragOver={(e) => e.preventDefault()}
+                    onDragOver={handleDragOver}
+                    onDragLeave={handleDragLeave}
                 >
-                    <input
-                        type="file"
-                        accept=".xlsx, .xls, .csv"
-                        onChange={handleFileUpload}
-                        className="hidden"
-                        id="file-upload"
-                    />
-                    <label htmlFor="file-upload" className="flex flex-col items-center justify-center w-full h-full">
-                        <svg
-                            className="w-10 h-10 mb-3 text-gray-400"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M7 16V8a4 4 0 018 0v8m-5 4h2a2 2 0 002-2v-4a2 2 0 00-2-2h-2a2 2 0 00-2 2v4a2 2 0 002 2z"
-                            ></path>
-                        </svg>
-                        <span className="text-gray-600">Drag & Drop or Click to Upload</span>
+                    <AnimatePresence mode="wait">
+                        {isLoading ? (
+                            <motion.div
+                                key="loading"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="absolute inset-0 flex flex-col items-center justify-center text-white/60"
+                            >
+                                <FiLoader className="w-8 h-8 animate-spin mb-3 text-blue-400" />
+                                <p className="text-sm">Processing your file...</p>
+                            </motion.div>
+                        ) : uploadSuccess ? (
+                            <motion.div
+                                key="success"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="absolute inset-0 flex flex-col items-center justify-center text-green-400"
+                            >
+                                <FiCheckCircle className="w-12 h-12 mb-3" />
+                                <p className="text-lg font-medium">Upload Successful!</p>
+                            </motion.div>
+                        ) : (
+                            <motion.div
+                                key="upload"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="absolute inset-0 flex flex-col items-center justify-center"
+                            >
+                                <div className="relative">
+                                    <FiUploadCloud className={`w-12 h-12 mb-4 transition-colors duration-300 ${isDragging ? "text-blue-400" : "text-white/40 group-hover:text-white/60"}`} />
+                                    <motion.div
+                                        animate={{ y: [0, -8, 0] }}
+                                        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                        className="absolute -top-1 -right-1"
+                                    >
+                                        <FiFile className="w-4 h-4 text-blue-400" />
+                                    </motion.div>
+                                </div>
+
+                                <p className={`text-lg font-medium mb-1 transition-colors duration-300 ${isDragging ? "text-blue-400" : "text-white/90"}`}>
+                                    Drop your file here
+                                </p>
+                                <p className="text-sm text-white/60">
+                                    or <span className="text-blue-400 hover:text-blue-500 cursor-pointer">browse</span>
+                                </p>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+
+                    <label htmlFor="file-upload" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                        <input
+                            id="file-upload"
+                            type="file"
+                            accept=".xlsx,.xls"
+                            onChange={handleFileUpload}
+                            className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                        />
                     </label>
-                </div>}
-            </div>
+
+                </div>
+            </motion.div>
         </div>
     );
 };

@@ -1,9 +1,20 @@
-import { SetStateAction, useState } from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaChevronDown, FaChevronRight, FaEye } from "react-icons/fa";  
 
-import { CleanedTradeData } from '@/utils/cleanData';
-import Link from "next/link";
+interface TradeData {
+  symbol: string;
+  openingDate: string;
+  openingTime: string;
+  entryPrice: number;
+  closingPrice: number;
+  closingQuantity: number;
+  net: number;
+  positions: number;
+}
+
 interface AccordionTableProps {
-  data: CleanedTradeData[];
+  data: TradeData[];
 }
 
 const AccordionTable = ({ data }: AccordionTableProps) => {
@@ -14,71 +25,73 @@ const AccordionTable = ({ data }: AccordionTableProps) => {
   };
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <div className="overflow-x-auto p-4">
+      <table className="w-full border-collapse shadow-lg rounded-xl overflow-hidden bg-gray-900 text-white">
+        <thead className="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
           <tr>
-            <th scope="col" className="px-6 py-3">
-              Symbol
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Date
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Open Time
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Open Price
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Close Price
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Lots
-            </th>
-            <th scope="col" className="px-6 py-3">
-              PnL
-            </th>
-            <th scope="col" className="px-6 py-3">
-              Positions
-            </th>
+            {["Symbol", "Date", "Open Time", "Open Price", "Close Price", "Lots", "PnL", "Positions", "Actions"].map((heading) => (
+              <th key={heading} className="px-6 py-3 text-left uppercase text-sm font-semibold">
+                {heading}
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody>
           {data.map((trade, index) => (
-            <>
-              <tr onClick={() => toggleAccordion(index)} key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  {trade.symbol}
-                </th>
-                <td className="px-6 py-4">
-                  {trade.openingDate}
-                </td>
-                <td className="px-6 py-4">
-                  {trade.openingTime}
-                </td>
-                <td className="px-6 py-4">
-                  {trade.entryPrice}
-                </td>
-                <td className="px-6 py-4">
-                  {trade.closingPrice}
-                </td>
-                <td className="px-6 py-4">
-                  {trade.closingQuantity}
-                </td>
-                <td className="px-6 py-4">
+            <React.Fragment key={index}>
+              <tr
+                onClick={() => toggleAccordion(index)}
+                className="cursor-pointer bg-gray-800 hover:bg-gray-700 transition-all duration-300 border-b border-gray-700"
+              >
+                <td className="px-6 py-4 font-medium">{trade.symbol}</td>
+                <td className="px-6 py-4">{trade.openingDate}</td>
+                <td className="px-6 py-4">{trade.openingTime}</td>
+                <td className="px-6 py-4">{trade.entryPrice}</td>
+                <td className="px-6 py-4">{trade.closingPrice}</td>
+                <td className="px-6 py-4">{trade.closingQuantity}</td>
+                <td className={`px-6 py-4 font-semibold ${trade.net > 0 ? "text-green-400" : "text-red-500"}`}>
                   {trade.net}
                 </td>
-
+                <td className="px-6 py-4">{trade.positions}</td>
+                <td className="px-6 py-4">
+                  <button className="bg-gray-700 hover:bg-gray-600 text-white px-3 py-2 rounded-lg flex items-center gap-2">
+                    <FaEye /> View
+                  </button>
+                </td>
               </tr>
-              {openIndex === index && (
-                <tr>
-                  <td colSpan={3} className="p-2 border bg-gray-50">
-                    {trade.entryPrice}
-                  </td>
-                </tr>
-              )}
-            </>
+              <AnimatePresence>
+                {openIndex === index && (
+                  <motion.tr
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="bg-gray-700"
+                  >
+                    <td colSpan={9} className="p-4 text-gray-300">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <p className="text-sm font-semibold">Entry Price:</p>
+                          <p>{trade.entryPrice}</p>
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold">Exit Price:</p>
+                          <p>{trade.closingPrice}</p>
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold">Trade Type:</p>
+                          <p>{trade.net > 0 ? "Profit Trade" : "Loss Trade"}</p>
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold">Profit/Loss:</p>
+                          <p className={trade.net > 0 ? "text-green-400" : "text-red-500"}>{trade.net}</p>
+                        </div>
+                      </div>
+                    </td>
+                  </motion.tr>
+                )}
+              </AnimatePresence>
+            </React.Fragment>
           ))}
         </tbody>
       </table>
