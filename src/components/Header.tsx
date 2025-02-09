@@ -1,5 +1,5 @@
 import React from 'react';
-import AddDataModal, { Button } from './AddDataModal';
+import { Button } from './AddDataModal';
 import { useModalStore } from '@/store/useModalStore';
 import { motion } from 'framer-motion';
 

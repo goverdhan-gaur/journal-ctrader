@@ -5,7 +5,6 @@ import KpiCard from "@/components/KpiCard";
 import Link from "next/link";
 import { Button } from "@/components/AddDataModal";
 import { useTradesStore } from "@/store/useTradeStore";
-import TradeListDetails from '@/components/TradeListDetails';
 import AccordionTable from '@/components/AccordionTable';
 
 export default function Home() {

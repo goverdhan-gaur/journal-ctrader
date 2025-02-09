@@ -31,7 +31,7 @@ export function aggregateTrades(trades: CleanedTradeData[]): AggregatedData[] {
         totalLotsMap[openKey] += trade.closingQuantity; // Sum up all lots for this grouping
     });
 
-    trades.forEach((trade, index) => {
+    trades.forEach((trade) => {
         const symbol = trade.symbol;
         const openKey = `${trade.symbol}_${trade.entryPrice}_${trade.openingTime}`;
 

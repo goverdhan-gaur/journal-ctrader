@@ -36,9 +36,10 @@ const toCamelCase = (str: string) => {
         return index === 0 ? match.toLowerCase() : match.toUpperCase();
     });
 };
-
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 export const convertKeysToCamelCase = (data: any[]) => {
     return data.map(item => {
+        /* eslint-disable  @typescript-eslint/no-explicit-any */
         const newItem: any = {};
         Object.keys(item).forEach(key => {
             const newKey = toCamelCase(key);

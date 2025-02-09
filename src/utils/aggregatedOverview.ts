@@ -1,4 +1,3 @@
-import { s } from "framer-motion/client";
 import { AggregatedData } from "./groupedTrades";
 
 export interface Overview {
@@ -42,22 +41,24 @@ export function generateOverview(aggregatedData: AggregatedData[]): Overview {
 }
 
 
-const getSessionDates = (tradeSummaries: any[]) => {
+const getSessionDates = (tradeSummaries: AggregatedData[]) => {
     // Ensure there are trade summaries
     if (tradeSummaries.length === 0) {
         return { startDate: null, endDate: null };
     }
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
     const getDate = (trade: any) => {
         // Convert it to a Date object
         const [day, month, year] = trade.date.split('/');
         const [hours, minutes, seconds] = trade.openTime.split(':');
 
-        // Create a new Date object
         return new Date(year, month - 1, day, hours, minutes, seconds.split('.')[0], seconds.split('.')[1]);
     }
     // Get the earliest openTime and latest closeTime
-    let startDate: Date = new Date(Math.min(...tradeSummaries.map((trade: any) => getDate(trade).getTime())));
-    let endDate: Date = new Date(Math.max(...tradeSummaries.map((trade: any) => getDate(trade).getTime())));
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
+    const startDate: Date = new Date(Math.min(...tradeSummaries.map((trade: any) => getDate(trade).getTime())));
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
+    const endDate: Date = new Date(Math.max(...tradeSummaries.map((trade: any) => getDate(trade).getTime())));
     // Convert to a formatted string (or adjust format as needed)
     const formattedStartDate = startDate.toLocaleString(); // or use .toISOString() for standard format
     const formattedEndDate = endDate.toLocaleString(); // or use .toISOString()

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaChevronDown, FaChevronRight, FaEye } from "react-icons/fa";  
+import { FaEye } from "react-icons/fa";  
 
 interface TradeData {
   symbol: string;

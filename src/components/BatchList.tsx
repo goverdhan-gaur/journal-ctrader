@@ -13,7 +13,7 @@ interface BatchListProps {
 }
 
 const BatchList: React.FC<BatchListProps> = ({ className, batches }) => {
-    const handleDelete = async (id: any) => {
+    const handleDelete = async (id: string | undefined) => {
         try {
             const batchRef = ref(database, `trades/${id}`);
             await remove(batchRef);

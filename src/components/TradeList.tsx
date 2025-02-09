@@ -1,4 +1,3 @@
-import { TradeData } from '@/utils/cleanData';
 import { AggregatedData } from '@/utils/groupedTrades';
 import Link from 'next/link';
 import React from 'react';

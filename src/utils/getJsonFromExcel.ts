@@ -13,7 +13,7 @@ export const getJsonDataFromExcel = async (event: React.ChangeEvent<HTMLInputEle
     if (!file) return;
 
     const reader = new FileReader();
-
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
     const fileLoadPromise = new Promise<any[]>((resolve, reject) => {
         reader.onload = (e) => {
             const binaryStr = e.target?.result;
@@ -22,6 +22,7 @@ export const getJsonDataFromExcel = async (event: React.ChangeEvent<HTMLInputEle
                 return;
             }
             try {
+                /* eslint-disable  @typescript-eslint/no-explicit-any */
                 let jsonData: any[] = [];
                 const workbook = XLSX.read(binaryStr, { type: "binary", cellDates: true });
                 const sheetName = workbook.SheetNames[0];
